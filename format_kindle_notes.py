@@ -1,9 +1,11 @@
 """
-Script to format raw kindle notes csv files in the data/kindle/raw directory and export formatted kindle notes csv files to the data/kindle directory.
-"""
 
+Script to format raw kindle notes csv files in the data/kindle/raw directory and export formatted kindle notes csv files to the data/kindle directory. Once raw csv file formatted, move raw kindle notes csv file from raw directory to raw/archive directory.
+
+"""
 import pandas as pd
 import glob
+import os
 
 
 # store raw kindle notes in this directory
@@ -11,6 +13,9 @@ KINDLE_RAW_NOTES_DIRECTORY = "data/kindle/raw"
 
 # store formatted kindle notes in this directory
 KINDLE_FORMATTED_NOTES_DIRECTORY = "data/kindle/"
+
+# store raw kindle notes in this directory after creating formatted csv files
+KINDLE_RAW_NOTES_ARCHIVE_DIRECTORY = "data/kindle/raw/archive"
 
 
 def extract_title_author(raw_notes_path):
@@ -62,6 +67,14 @@ def format_kindle_notes_to_csv(raw_notes_path, formatted_notes_directory):
     notes_df.to_csv(formatted_notes_path, index=False)
 
 
+def archive_raw_kindle_notes(raw_notes_path, kindle_raw_notes_archive_directory):
+    """
+    Move raw kindle notes from raw directory to raw/archive directory.
+    """
+    raw_notes_archive_path = raw_notes_path.replace(os.path.dirname(raw_notes_path), kindle_raw_notes_archive_directory)
+    os.rename(raw_notes_path, raw_notes_archive_path)
+
+
 if __name__ == "__main__":
 
     # grab list of raw kindle notes files
@@ -69,3 +82,4 @@ if __name__ == "__main__":
 
     for raw_notes_path in raw_notes_paths:
         format_kindle_notes_to_csv(raw_notes_path, KINDLE_FORMATTED_NOTES_DIRECTORY)
+        archive_raw_kindle_notes(raw_notes_path, KINDLE_RAW_NOTES_ARCHIVE_DIRECTORY)

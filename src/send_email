@@ -1,0 +1,2 @@
+#!/bin/sh
+python /Users/hcederna/Desktop/notes-email/src/send_email.py

@@ -6,16 +6,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 from config import gmail_user, gmail_password, recipient_email
-
-
-# send this number of notes in email
-NUM_NOTES = 5
-
-# store formatted kindle notes in this directory
-KINDLE_FORMATTED_NOTES_DIRECTORY = "data/kindle/"
-
-# store formatted learning notes in this directory
-APPLE_NOTES_FORMATTED_NOTES_DIRECTORY = "data/apple_notes"
+from config import NUM_NOTES, KINDLE_FORMATTED_NOTES_DIRECTORY, APPLE_NOTES_FORMATTED_NOTES_DIRECTORY
 
 
 def assemble_html_body_of_email(notes_df):

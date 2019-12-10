@@ -7,15 +7,7 @@ import pandas as pd
 import glob
 import os
 
-
-# store raw kindle notes in this directory
-KINDLE_RAW_NOTES_DIRECTORY = "data/kindle/raw"
-
-# store formatted kindle notes in this directory
-KINDLE_FORMATTED_NOTES_DIRECTORY = "data/kindle/"
-
-# store raw kindle notes in this directory after creating formatted csv files
-KINDLE_RAW_NOTES_ARCHIVE_DIRECTORY = "data/kindle/raw/archive"
+from config import KINDLE_RAW_NOTES_DIRECTORY, KINDLE_FORMATTED_NOTES_DIRECTORY, KINDLE_RAW_NOTES_ARCHIVE_DIRECTORY
 
 
 def extract_title_author(raw_notes_path):

@@ -5,12 +5,7 @@ Script to format raw learning notes html file in the data/apple_notes/raw direct
 """
 import re
 
-
-# store raw learning notes in this directory
-APPLE_NOTES_RAW_LEARNING_NOTES_DIRECTORY = "data/apple_notes/raw"
-
-# store formatted learning notes in this directory
-APPLE_NOTES_FORMATTED_NOTES_DIRECTORY = "data/apple_notes"
+from config import APPLE_NOTES_RAW_LEARNING_NOTES_DIRECTORYAPPLE_NOTES_FORMATTED_NOTES_DIRECTORY
 
 
 def remove_html_tags_extraneous_whitespaces(line):

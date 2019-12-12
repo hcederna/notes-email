@@ -9,7 +9,7 @@ c = imaplib.IMAP4_SSL("imap.gmail.com")
 c.login(gmail_user_2, gmail_password_2)
 c.select(readonly=False)
 
-print("Searching inbox for unread emails with kindle notes to download...\n")
+# print("Searching inbox for unread emails with kindle notes to download...\n")
 
 res, msg_ids = c.search(None, '(Unseen SUBJECT "Kindle Notes")')
 
@@ -28,10 +28,10 @@ for msg_id in msg_ids[0].split():
         filename = part.get_filename()
         if ".csv" in filename:
 
-            print(f"Downloading {filename}...")
+            # print(f"Downloading {filename}...")
 
             fp = open(KINDLE_RAW_NOTES_DIRECTORY + '/' + part.get_filename(), 'wb')
             fp.write(part.get_payload(decode=True))
             fp.close()
 
-print("\nProcess complete.")
+# print("\nProcess complete.")

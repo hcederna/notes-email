@@ -1,0 +1,6 @@
+#!/bin/sh
+osascript /Users/hcederna/Desktop/notes-email/src/import_learning_notes.scpt
+python /Users/hcederna/Desktop/notes-email/src/format_learning_notes.py
+python /Users/hcederna/Desktop/notes-email/src/import_kindle_notes.py
+python /Users/hcederna/Desktop/notes-email/src/format_kindle_notes.py
+python /Users/hcederna/Desktop/notes-email/src/send_email.py

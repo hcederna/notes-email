@@ -1,0 +1,2 @@
+#!/bin/sh
+python ~/Desktop/notes-email/notes_email.py

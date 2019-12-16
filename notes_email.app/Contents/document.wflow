@@ -52,7 +52,7 @@
 				<dict>
 					<key>fileNames</key>
 					<array>
-						<string>~/Desktop/notes-email/src/notes_email</string>
+						<string>~/Desktop/notes-email/notes_email</string>
 					</array>
 				</dict>
 				<key>BundleIdentifier</key>
@@ -70,7 +70,7 @@
 				<key>Class Name</key>
 				<string>SpecifiedFilesAction</string>
 				<key>InputUUID</key>
-				<string>9FB550BF-BD51-4992-BAD0-23CB3AD4CFE3</string>
+				<string>BFDE1A0B-CCB7-4F72-8150-47BE5C909288</string>
 				<key>Keywords</key>
 				<array>
 					<string>File</string>
@@ -79,9 +79,9 @@
 					<string>Get</string>
 				</array>
 				<key>OutputUUID</key>
-				<string>CFE62915-70C0-45DF-8E6B-C5DA4D533701</string>
+				<string>2B58563E-3739-48D9-9C70-EB5B928B50D6</string>
 				<key>UUID</key>
-				<string>4F92B10C-A05E-4B8C-937B-4D0417B2DE40</string>
+				<string>24E45C48-983F-4840-BCF8-AFFE5D584208</string>
 				<key>UnlocalizedApplications</key>
 				<array>
 					<string>Finder</string>
@@ -177,7 +177,7 @@
 				<key>Class Name</key>
 				<string>AMOpenFinderItems</string>
 				<key>InputUUID</key>
-				<string>8E1CA270-B55D-4512-BBD1-7A2F3B058767</string>
+				<string>ABBA2152-57BC-488F-AD84-C54921F30294</string>
 				<key>Keywords</key>
 				<array>
 					<string>Open</string>
@@ -185,9 +185,9 @@
 					<string>File</string>
 				</array>
 				<key>OutputUUID</key>
-				<string>27416297-584B-4082-AED4-A897AC918D2B</string>
+				<string>4BB840DA-E3E6-4E32-8231-EE9B2ED14ADB</string>
 				<key>UUID</key>
-				<string>27252184-4B84-4D75-B352-43DC33EF2683</string>
+				<string>EF571CBA-87D6-491B-BED3-0761B03C53A5</string>
 				<key>UnlocalizedApplications</key>
 				<array>
 					<string>Finder</string>
@@ -223,12 +223,12 @@
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>5F4B2D71-F582-4868-A1DA-02DA12B0CD80</key>
+		<key>DFF7ACA1-C504-4BCF-9F98-52D6F14D33B1</key>
 		<dict>
 			<key>from</key>
-			<string>4F92B10C-A05E-4B8C-937B-4D0417B2DE40 - 4F92B10C-A05E-4B8C-937B-4D0417B2DE40</string>
+			<string>24E45C48-983F-4840-BCF8-AFFE5D584208 - 24E45C48-983F-4840-BCF8-AFFE5D584208</string>
 			<key>to</key>
-			<string>27252184-4B84-4D75-B352-43DC33EF2683 - 27252184-4B84-4D75-B352-43DC33EF2683</string>
+			<string>EF571CBA-87D6-491B-BED3-0761B03C53A5 - EF571CBA-87D6-491B-BED3-0761B03C53A5</string>
 		</dict>
 	</dict>
 	<key>workflowMetaData</key>

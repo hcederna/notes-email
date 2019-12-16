@@ -1,11 +1,4 @@
-"""
-
-Script to format raw learning notes html file in the data/apple_notes/raw directory and export formatted learning notes csv file to the data/apple_notes directory.
-
-"""
 import re
-
-from config import APPLE_NOTES_RAW_LEARNING_NOTES_DIRECTORY, APPLE_NOTES_FORMATTED_NOTES_DIRECTORY
 
 
 def remove_html_tags_extraneous_whitespaces(line):
@@ -60,9 +53,11 @@ def format_learning_notes_to_csv(html_file, csv_file):
     html_file.close()
 
 
-if __name__ == "__main__":
-
-    html_file = open(APPLE_NOTES_RAW_LEARNING_NOTES_DIRECTORY+'/learning_notes.html', 'r', encoding="ISO-8859-1")
-    csv_file = open(APPLE_NOTES_FORMATTED_NOTES_DIRECTORY+'/learning_notes.csv', 'w')
+def format_learning_notes(apple_notes_raw_learning_notes_directory, apple_notes_formatted_notes_directory):
+    """
+    Extract data from raw apple notes html file and save formatted apple notes as a csv file in formatted notes directory.
+    """
+    html_file = open(apple_notes_raw_learning_notes_directory+'/learning_notes.html', 'r', encoding="ISO-8859-1")
+    csv_file = open(apple_notes_formatted_notes_directory+'/learning_notes.csv', 'w')
 
     format_learning_notes_to_csv(html_file, csv_file)

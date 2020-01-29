@@ -24,7 +24,7 @@ You run the program to send a one-time notes digest email from your Gmail accoun
 
 ### Download the repository
 
-Click `Clone or download` and `Download ZIP`. Once the download is complete, unzip the file and drag it onto your desktop.
+Click `Clone or download` and `Download ZIP`. Once the download is complete, unzip the file and drag it onto your desktop. Rename the directory `notes-email`.
 
 
 ### Install necessary packages
@@ -79,9 +79,9 @@ Now when you open the Notes application on your Mac, you'll see all the notes fr
 
 #### `Learning Notes` Note
 
-Let's use the learning notes template included in the `notes-email-master` directory to create a `Learning Notes` note.
+Let's use the learning notes template included in the `notes-email` directory to create a `Learning Notes` note.
 
-1. On your desktop, open the `notes-email-master` directory.
+1. On your desktop, open the `notes-email` directory.
 2. Open the `templates/learning_notes_template.txt` file.
 3. Press `command + A` to highlight all the text.
 4. Press `command + C` to copy the highlighted text.
@@ -156,11 +156,11 @@ Repeat this process for each of the books you want included in the notes digest 
 
 #### _A Quick Note on Formatting_
 
-For the program to run correctly, each new email containing Kindle book highlights needs to be marked as unread in your Gmail inbox. After the program runs, you can mark these emails as read and archive/delete as you see fit. The program automatically saves a copy of each set of highlights in the `notes-digest-master/data/kindle` directory for use in future notes digest emails.
+For the program to run correctly, each new email containing Kindle book highlights needs to be marked as unread in your Gmail inbox. After the program runs, you can mark these emails as read and archive/delete as you see fit. The program automatically saves a copy of each set of highlights in the `notes-email/data/kindle` directory for use in future notes digest emails.
 
 The emails containing book highlights can be archived/deleted after the program runs.
 
-Once the program runs, these emails can be marked as read and archived/deleted. A copy of each book's highlights is stored in the `notes-digest-master/data/raw/archive` directory.
+Once the program runs, these emails can be marked as read and archived/deleted. A copy of each book's highlights is stored in the `notes-email/data/raw/archive` directory.
 
 ### Configure Gmail Authentication
 
@@ -188,14 +188,14 @@ Now let's create an app-specific password--a 16-digit passcode that gives our no
 
 Let's save this app password in a configuration file so our program can use it later.
 
-1. On your desktop, open the `notes-email-master` directory.
+1. On your desktop, open the `notes-email` directory.
 2. Open the `templates/config_template.py` file.
 3. Highlight `your_app_password` next to `GMAIL_PASSWORD`.
 4. Press `command + V` to paste the app password as the new `GMAIL_PASSWORD`. Make sure you have ""around the app password.
 5. Replace the `your_email@gmail.com` value next to `GMAIL_USER` with your Gmail account. Make sure you have ""around the email address.
 6. On the top menu bar, choose `File > Duplicate`.
 7. On the top menu bar, choose `File > Save`.
-8. Save the duplicated file as `config.py` in the `notes-email-master` directory.
+8. Save the duplicated file as `config.py` in the `notes-email` directory.
 9. Once you've saved the app password, navigate back to your Google account and click `Done`.
 
 Success!
@@ -204,7 +204,7 @@ Success!
 
 Let's circle back to the `config.py` file you saved in the previous step to fill out the remaining information.
 
-1. On your desktop, open the `notes-email-master` directory.
+1. On your desktop, open the `notes-email` directory.
 2. Open the `config.py` file.
 3. Replace the `specified_recipient_email@gmail.com` value next to `RECIPIENT_EMAIL` with the email address where you want to send the notes digest email (this can be your Gmail account). Make sure you have ""around the email address.
 4. Replace the `5` value next to `NUM_NOTES` with the number of random learning notes and Kindle highlights to include in each notes digest email.
@@ -214,7 +214,7 @@ All set!
 
 ### __A Note on Directory Structure__
 
-If you want to move the `notes-digest-master` directory from your desktop to another location, you'll need to update the file paths in two locations:
+If you want to move the `notes-email` directory from your desktop to another location, you'll need to update the file paths in two locations:
 
 1. Line 2 of the `src/import_learning_notes.scpt` file.
 2. Line 2 of the `notes_email` file.
@@ -225,7 +225,7 @@ If you want to move the `notes-digest-master` directory from your desktop to ano
 
 You are now ready to send your first notes digest email!
 
-1. On your desktop, open the `notes-email-master` directory.
+1. On your desktop, open the `notes-email` directory.
 2. Press `control + click` to right-click on the `notes_email.app` application.
 3. Select `Open`.
 
@@ -273,7 +273,7 @@ Now let's create a repeated event to run the `send_notes.app` at a specified tim
 5. Change the `alert` value to `Custom...`.
 6. Change the `Message with sound` value to `Open file`.
 7. Change the `Calendar` value to `Other...`.
-8. Select the `Desktop/notes-email-master/notes_email.app` file.
+8. Select the `Desktop/notes-email/notes_email.app` file.
 9. Change the `minutes before` value to `At time of event`.
 10. Click `Ok`.
 11. Adjust the `repeat` value to your desired interval specifying how often you want to receive the notes digest email.

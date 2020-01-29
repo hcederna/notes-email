@@ -1,2 +1,2 @@
 #!/bin/sh
-python ~/Desktop/notes-email-master/notes_email.py
+python ~/Desktop/notes-email/notes_email.py

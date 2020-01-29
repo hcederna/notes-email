@@ -226,7 +226,13 @@ If you want to move the `notes-digest-master` directory from your desktop to ano
 You are now ready to send your first notes digest email!
 
 1. On your desktop, open the `notes-email-master` directory.
-2. Double click on the `notes_email.app` application.
+2. Press `control + click` to right-click on the `notes_email.app` application.
+3. Select `Open`.
+
+Because you downloaded the notes email application from the internet, you need to confirm you want to open it.
+
+1. Click `Open`.
+2. Click `Open`.
 
 The application temporarily opens a Terminal window while the program runs. Once the terminal window closes, navigate to the recipient email inbox and refresh to see your new notes digest email!
 

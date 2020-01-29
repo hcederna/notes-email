@@ -2,19 +2,19 @@
 
 Compose and send an email containing a random selection of your learning notes and Kindle highlights.
 
-<img src="images/notes_digest.png" title="notes digest email" width="800" height="1000">
+<img src="images/notes_digest.png" title="notes digest email">
 
 You use the Notes application (the one provided by Apple) on your Mac or iOS device to update a "Learning Notes" note with interesting facts from podcasts, documentaries, TED talks, et cetera.
 
 The program searches the Notes application for your note titled "Learning Notes" and downloads/formats entries for use in the notes digest email.
 
-<img src="images/learning_notes_note.png" title="learning notes note" width="800" height="1000">
+<img src="images/learning_notes_note.png" title="learning notes note">
 
 You send Kindle highlights from your Kindle device to your Gmail inbox.
 
 The program searches your Gmail inbox for unread messages containing Kindle highlights and downloads/formats highlights for use in the notes digest email.
 
-<img src="images/send_kindle_highlights.png" title="send kindle highlights" width="800" height="1000">
+<img src="images/send_kindle_highlights.png" title="send kindle highlights">
 
 You run the program to send a one-time notes digest email from your Gmail account to a specified recipient. Or, you use the Calendar application (the one provided by Apple) on your Mac to send notes digest emails automatically.
 

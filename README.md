@@ -70,12 +70,10 @@ First, let's verify you have iCloud for Notes set up on your Mac and iOS devices
 1. On your Mac, go to `System Preferences`.
 2. Click `iCloud`.
 3. Check the box next to `Notes`.
-
-
-1. On your iPhone or iPad, go to `Settings`.
-2. Tap your name at the top.
-3. Tap `iCloud`.
-4. Toggle the switch next to `Notes` from gray to green.
+4. On your iPhone or iPad, go to `Settings`.
+5. Tap your name at the top.
+6. Tap `iCloud`.
+7. Toggle the switch next to `Notes` from gray to green.
 
 Now when you open the Notes application on your Mac, you'll see all the notes from your iOS devices in the sidebar on the left-hand side of the window. If the notes from your iOS devices don't appear after a few minutes, [troubleshoot iCloud for Notes here](https://www.payetteforward.com/how-sync-iphone-notes-mac-pc-computer-fix/).
 
@@ -87,11 +85,9 @@ Let's use the learning notes template included in the `notes-email-master` direc
 2. Open the `templates/learning_notes_template.txt` file.
 3. Press `command + A` to highlight all the text.
 4. Press `command + C` to copy the highlighted text.
-
-
-1. On your Mac, open the Notes app (the one provided by Apple).
-2. On the top menu bar, choose `File > New Note`.
-3. Press `command + V` to paste the contents of the learning notes template into the new note.
+5. On your Mac, open the Notes app (the one provided by Apple).
+6. On the top menu bar, choose `File > New Note`.
+7. Press `command + V` to paste the contents of the learning notes template into the new note.
 
 Success! The new `Learning Notes` note will save automatically.
 
@@ -237,12 +233,10 @@ First, let's verify you have iCloud for Calendars set up on your Mac and iOS dev
 1. On your Mac, go to `System Preferences`.
 2. Click `iCloud`.
 3. Check the box next to `Calendars`.
-
-
-1. On your iPhone or iPad, go to `Settings`.
-2. Tap your name at the top.
-3. Tap `iCloud`.
-4. Toggle the switch next to `Calendars` from gray to green.
+4. On your iPhone or iPad, go to `Settings`.
+5. Tap your name at the top.
+6. Tap `iCloud`.
+7. Toggle the switch next to `Calendars` from gray to green.
 
 Now when you open the Calendar application on your Mac, you'll see all the calendars from your iOS devices in the sidebar on the left-hand side of the window.
 

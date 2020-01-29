@@ -212,8 +212,16 @@ Let's circle back to the `config.py` file you saved in the previous step to fill
 
 All set!
 
+### __A Note on Directory Structure__
 
-### Run the Program - Send a One-Time Notes Digest Email
+If you want to move the `notes-digest-master` directory from your desktop to another location, you'll need to update the file paths in two locations:
+
+1. Line 2 of the `src/import_learning_notes.scpt` file.
+2. Line 2 of the `notes_email` file.
+
+## Run the Program
+
+### Send a One-Time Notes Digest Email
 
 You are now ready to send your first notes digest email!
 
@@ -267,9 +275,4 @@ Now let's create a repeated event to run the `send_notes.app` at a specified tim
 
 Done! Shortly after each scheduled event, you can navigate to the recipient email inbox to see a new notes digest email!
 
-### __A Note on Directory Structure__
 
-If you want to move the `notes-digest-master` directory from your desktop to another location, you'll need to update the file paths in two locations:
-
-1. Line 2 of the `src/import_learning_notes.scpt` file.
-2. Line 2 of the `notes_email` file.

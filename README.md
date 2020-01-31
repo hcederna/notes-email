@@ -134,7 +134,7 @@ Perfect!
 
 Your Kindle sends book highlights to the email address associated with your Amazon account. Let's verify this email address is your Gmail account.
 
-1. Go to your Amazon account. [Amazon account](https://www.amazon.com/gp/css/homepage.html)
+1. Go to your [Amazon account](https://www.amazon.com/gp/css/homepage.html).
 2. Select `Login & Security`.
 3. Confirm the `Email` is your Gmail account.
 4. Click `Edit` to change the email to your Gmail account if necessary.
@@ -168,7 +168,7 @@ The program accesses your Gmail inbox to retrieve Kindle highlights and to send 
 
 First, let's verify you have two-factor authentication on your Gmail account.
 
-1. Go to your Google account. [Google account](https://myaccount.google.com/)
+1. Go to your [Google account](https://myaccount.google.com/).
 2. On the left navigation panel, click `Security`.
 3. On the `Signing in to Google` panel, click `2-Step Verification` if necessary.
 4. Click `Get Started`.
@@ -178,7 +178,7 @@ Perfect!
 
 Now let's create an app-specific password--a 16-digit passcode that gives our non-Google program permission to access your Gmail account.
 
-1. Go to your Google account. [Google account](https://myaccount.google.com/)
+1. Go to your [Google account](https://myaccount.google.com/).
 2. On the left navigation panel, choose `Security`.
 3. On the `Signing in to Google` panel, choose `App Passwords`.
 4. At the bottom, choose `Select app` and choose the `Mail` app.

@@ -26,8 +26,8 @@ def format_learning_notes_to_csv(html_file, csv_file):
 
         line = remove_html_tags_extraneous_whitespaces(line)
 
-        # skip empty lines
-        if line:
+        # skip title and empty lines
+        if idx > 0 and line:
             # reset author and title after divider
             if "==========" in line:
                 div_idx = idx

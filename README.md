@@ -27,36 +27,82 @@ You run the program to send a one-time notes digest email from your Gmail accoun
 Click `Clone or download` and `Download ZIP`. Once the download is complete, unzip the file and drag it onto your desktop. Rename the directory `notes-email`.
 
 
-### Install necessary packages
+### Setup a virtual environment with Anaconda
 
-You need `Python 3.5` or greater along with the `pandas` and `jupyter` packages to successfully compose and send the notes digest email.
-
-
-### *Optional: Set up a virtual environment with Anaconda*
-
-You can create a virtual environment on your computer to hold the necessary Python version and packages. We can build the environment using the [Anaconda Distribution](https://www.anaconda.com/what-is-anaconda/), a popular Python data science platform for package management and deployment. If you already have Anaconda installed, proceed to the next step. Otherwise, [download the Python 3.7 version of Anaconda here](https://www.anaconda.com/download/).
+The next step is to create a virtual environment on your computer. This environment holds the Python version and packages necessary to successfully compose and send the notes digest email. We can build the environment using the [Anaconda Distribution](https://www.anaconda.com/why-anaconda), a popular Python data science platform for package management and deployment. If you already have Anaconda installed, move on to the next step. Otherwise, [download Anaconda here](https://www.anaconda.com/download/).
 
 To confirm Anaconda is installed correctly, [open a terminal window](http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line) and run:
 
-`
+```
 conda --version
-`
+```
 
-You should see the installed version number, such as `conda 4.8.0`. If you see an error message, reference [verifying that conda is installed](https://docs.anaconda.com/anaconda/install/verify-install/) in the conda documentation.
+You should see the installed version number, such as `conda 23.5.0`. If instead, you see an error message, reference [verifying that conda is installed](https://docs.anaconda.com/free/anaconda/install/verify-install/) in the conda documentation.
 
-To list the virtual environments available on your computer, run:
+With Anaconda correctly installed, navigate in the terminal to the `notes-email` directory using the command:
 
-`
+```
+cd Desktop/notes-email/
+```
+
+#### Option 1: Create environment from environment.yml file
+
+Once in the correct directory, you can use the `environment.yml` file to create a virtual environment on your computer using the command:
+
+```
+conda env create -f environment.yml
+```
+
+This installs the necessary packages and may take some time to finish. Once the process is complete, run:
+
+```
 conda info --env
-`
+```
 
-You should see the active `base` environment identified with an asterisk (*) on this list. Verify that the `base` environment installed correctly using:
+to list the virtual environments available on your computer with the active environment identified with an asterisk (*). You should see the new notes-email environment on this list.
 
-`
+Activate the `notes-email` virtual environment by running the following command:
+
+```
+source activate notes-email
+```
+
+Verify that the `notes-email` environment installed correctly using:
+
+```
 conda list
-`
+```
 
-You should see a list of packages and package versions installed in your environment, including `jupyter`, `pandas`, and `python`. If you see an error message, reference [installing packages](https://docs.anaconda.com/anaconda/user-guide/tasks/install-packages/) in the conda documentation.
+You should see a list of packages and package versions installed in your environment, including `jupyter    1.0.0`, `pandas    1.5.3`, and `python    3.11.3` . If instead, you see an error message, reference [creating an environment from an environment.yml file](https://conda.io/docs/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) in the conda documentation.
+
+#### Option 2: Create an environment and install necessary packages
+
+Once in the correct directory, you can create a `notes-email` virtual environment on your computer using the command:
+
+```
+conda create -n notes-email python=3.11.3 pandas=1.5.3 jupyter=1.0.0
+```
+
+When prompted to proceed, type `y` and hit `Enter`. This installs the correct version of Python along with the correct versions of the pandas and Jupyter packages into a newly created notes-email virtual environment. Note that each installation may take some time to finish.
+
+Now activate the `notes-email` environment by running:
+
+```
+source activate notes-email
+```
+
+Verify that the `notes-email` environment installed correctly using:
+
+```
+conda list
+```
+
+You should see a list of packages and package versions installed in your environment, including `jupyter    1.0.0`, `pandas    1.5.3`, and `python    3.11.3` . If instead, you see an error message, reference [installing packages](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-pkgs.html#installing-packages) in the conda documentation.
+
+
+### *Alternative without Anaconda: Install necessary packages*
+
+You need `Python 3.11` or greater along with the `pandas` and `jupyter` packages to successfully compose and send the notes digest email.
 
 
 ### Set Up Learning Notes

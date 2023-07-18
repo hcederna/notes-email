@@ -68,12 +68,14 @@ You'll use a note in the Notes application (the one provided by Apple) to collec
 First, let's verify you have iCloud for Notes set up on your Mac and iOS devices.
 
 1. On your Mac, go to `System Preferences`.
-2. Click `iCloud`.
-3. Check the box next to `Notes`.
-4. On your iPhone or iPad, go to `Settings`.
-5. Tap your name at the top.
-6. Tap `iCloud`.
-7. Toggle the switch next to `Notes` from gray to green.
+2. Click `Apple ID`.
+3. Click `iCloud`.
+4. Check the box next to `Notes`.
+5. On your iPhone or iPad, go to `Settings`.
+6. Tap your name at the top.
+7. Tap `iCloud`.
+8. Navigate to the `APPS USING ICLOUD` section and click `Show All`.
+9. Click on `Notes` and toggle the switch next to `Sync this iPhone` from gray to green.
 
 Now when you open the Notes application on your Mac, you'll see all the notes from your iOS devices in the sidebar on the left-hand side of the window. If the notes from your iOS devices don't appear after a few minutes, [troubleshoot iCloud for Notes here](https://www.payetteforward.com/how-sync-iphone-notes-mac-pc-computer-fix/).
 
@@ -113,6 +115,7 @@ Title 2
 * learning note (mm/dd/yyyy)
 * learning note (mm/dd/yyyy)
 ```
+
 
 ### Send Kindle Highlights
 
@@ -158,9 +161,6 @@ Repeat this process for each of the books you want included in the notes digest 
 
 For the program to run correctly, each new email containing Kindle book highlights needs to be marked as unread in your Gmail inbox. After the program runs, you can mark these emails as read and archive/delete as you see fit. The program automatically saves a copy of each set of highlights in the `notes-email/data/kindle` directory for use in future notes digest emails.
 
-The emails containing book highlights can be archived/deleted after the program runs.
-
-Once the program runs, these emails can be marked as read and archived/deleted. A copy of each book's highlights is stored in the `notes-email/data/raw/archive` directory.
 
 ### Configure Gmail Authentication
 
@@ -170,7 +170,7 @@ First, let's verify you have two-factor authentication on your Gmail account.
 
 1. Go to your [Google account](https://myaccount.google.com/).
 2. On the left navigation panel, click `Security`.
-3. On the `Signing in to Google` panel, click `2-Step Verification` if necessary.
+3. On the `How you sign in to Google` panel, click `2-Step Verification` if necessary.
 4. Click `Get Started`.
 5. Follow the steps on the screen.
 
@@ -179,12 +179,11 @@ Perfect!
 Now let's create an app-specific password--a 16-digit passcode that gives our non-Google program permission to access your Gmail account.
 
 1. Go to your [Google account](https://myaccount.google.com/).
-2. On the left navigation panel, choose `Security`.
-3. On the `Signing in to Google` panel, choose `App Passwords`.
-4. At the bottom, choose `Select app` and choose the `Mail` app.
-5. Choose `Select device` and choose the `Mac` device you're using.
-6. Choose `Generate`.
-7. Highlight the 16-character code in the yellow bar (the app password) and press `command + C`.
+2. Using the `Search Google Account` box at the top of the page, search for `App Passwords`.
+3. At the bottom, choose `Select app` and choose the `Mail` app.
+4. Choose `Select device` and choose the `Mac` device you're using.
+5. Choose `Generate`.
+6. Highlight the 16-character code in the yellow bar (the app password) and press `command + C`.
 
 Let's save this app password in a configuration file so our program can use it later.
 
@@ -212,6 +211,7 @@ Let's circle back to the `config.py` file you saved in the previous step to fill
 
 All set!
 
+
 ### __A Note on Directory Structure__
 
 If you want to move the `notes-email` directory from your desktop to another location, you'll need to update the file paths in two locations:
@@ -219,7 +219,9 @@ If you want to move the `notes-email` directory from your desktop to another loc
 1. Line 2 of the `src/import_learning_notes.scpt` file.
 2. Line 2 of the `notes_email` file.
 
+
 ## Run the Program
+
 
 ### Send a One-Time Notes Digest Email
 
@@ -229,12 +231,10 @@ You are now ready to send your first notes digest email!
 2. Press `control + click` to right-click on the `notes_email.app` application.
 3. Select `Open`.
 
-Because you downloaded the notes email application from the internet, you need to confirm you want to open it.
-
-1. Click `Open`.
-2. Click `Open`.
+Because you downloaded the notes email application from the internet, you may need to complete the above steps multiple times to have the `Open` option appear. You also may need to continue selecting the `Open` option in a few consecutive dialog boxes.
 
 The application temporarily opens a Terminal window while the program runs. Once the terminal window closes, navigate to the recipient email inbox and refresh to see your new notes digest email!
+
 
 ### Optional: Send Notes Digest Emails Automatically
 
@@ -280,5 +280,3 @@ Now let's create a repeated event to run the `send_notes.app` at a specified tim
 12. Adjust the `end repeat` value to your desired value specifying when to stop the automation.
 
 Done! Shortly after each scheduled event, you can navigate to the recipient email inbox to see a new notes digest email!
-
-
